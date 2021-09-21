@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-page website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpeg"></a>
+            <div class="navig" id="navG">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">OVERVIEW</a></li>
+                    <li><a href="symptoms.html">SYMPTOMS</a></li>
+                    <li><a href="prevention.html">PREVENTION</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Symptoms</h1>
+    </section>
+
+    <!----SYMPTOMS---->
+    <section class="sym">
+        <h2>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate
+            illness and recover without hospitalization.</h2>
+        <div class="row">
+            <div class="sym-col">
+                <img src="images/images.jpeg">
+                <h3>Most common symptoms:</h3>
+                <p>
+                <ul>
+                    <li>fever</li>
+                    <li>dry cough</li>
+                    <li>tiredness</li>
+                </ul>
+                </p>
+            </div>
+            <div class="sym-col">
+                <img src="images/less sym.jpeg">
+                <h3>Less common symptoms:</h3>
+                <p>
+                <ul>
+                    <li>aches and pains</li>
+                    <li>sore throat</li>
+                    <li>diarrhoea</li>
+                    <li>conjunctivitis</li>
+                    <li>headache</li>
+                    <li>loss of taste or smell</li>
+                    <li>a rash on skin, or discolouration of fingers or toes</li>
+                </ul>
+                </p>
+            </div>
+            <div class="sym-col">
+                <img src="images/bre.jpeg">
+                <h3>Serious symptoms:</h3>
+                <p>
+                <ul>
+                    <li>difficulty breathing or shortness of breath</li>
+                    <li>chest pain or pressure</li>
+                    <li>loss of speech or movement</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!---- JS for toggle ---->
+    <script>
+        var navG = document.getElementById("navG");
+        function showMenu() {
+            navG.style.right = "0";
+        }
+        function hideMenu() {
+            navG.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

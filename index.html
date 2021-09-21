@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-page website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpeg" ></a>
+            <div class="navig" id="navG">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">OVERVIEW</a></li>
+                    <li><a href="symptoms.html">SYMPTOMS</a></li>
+                    <li><a href="prevention.html">PREVENTION</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="ttb">
+        <h1>Coronavirus disease</h1>
+        <p>Coronavirus disease (COVID-19) is an infectious disease caused by <br> a newly discovered coronavirus.</p>
+        <a href="" class="btn">Visit for more</a>
+    </div>
+
+    </section>
+<!---- OVERVIEW ---->
+<section class="over">
+    <div class="row">
+        <div class="over-col">
+            <h1>What Is COVID-19?</h1>
+            <p>A coronavirus is a kind of common virus that causes an infection in your nose, sinuses, or upper throat. Most coronaviruses aren't dangerous.
+            <br>
+            <br>
+            In early 2020, after a December 2019 outbreak in China, the World Health Organization identified SARS-CoV-2 as a new type of coronavirus. The outbreak quickly spread around the world.
+            </p>
+        </div>  
+        <div class="over-col">
+            <img src="images/1.jpeg">
+        </div> 
+    </div>
+</section>
+
+<!---- JS for toggle ---->
+    <script>
+        var navG = document.getElementById("navG");
+        function showMenu(){
+            navG.style.right = "0";
+        }
+        function hideMenu(){
+            navG.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

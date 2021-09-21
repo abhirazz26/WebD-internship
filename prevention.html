@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-page website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpeg" ></a>
+            <div class="navig" id="navG">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">OVERVIEW</a></li>
+                    <li><a href="symptoms.html">SYMPTOMS</a></li>
+                    <li><a href="prevention.html">PREVENTION</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Prevention</h1>
+    </section>
+
+<!---- PREVENTION ---->
+<section class="pre">
+    <h1>Preventive measures</h1>
+    <p>Protect yourself and others around you by knowing the facts and taking appropriate precautions.</p>
+    <div class="row">
+        <div class="pre-col">
+            <h3>Clean your hands:</h3>
+            <p>Use soap and water, or an alcohol-based hand rub.Don’t touch your eyes, nose or mouth.</p>
+        </div>
+        <div class="pre-col">
+            <h3>Wear Mask:</h3>
+            <p>Masks can help prevent the spread of the virus from the person wearing the mask to others. Masks alone do not protect against COVID-19, and should be combined with physical distancing and hand hygiene.</p>
+        </div>
+        <div class="pre-col">
+            <h3>If you have symptoms:</h3>
+            <p>If you have  fever, cough and difficulty breathing, seek medical attention.
+                Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.Stay home if you feel unwell.
+            </p>
+        </div>   
+    </div>
+</section>
+
+<!---- JS for toggle ---->
+    <script>
+        var navG = document.getElementById("navG");
+        function showMenu(){
+            navG.style.right = "0";
+        }
+        function hideMenu(){
+            navG.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
